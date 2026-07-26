@@ -1,0 +1,5 @@
+1)To install class-validator and class-transformer
+	npm i class-validator class-transformer
+	
+2)How to create pipes in nestjs
+	nest g pipe common/pipes/uppercase
