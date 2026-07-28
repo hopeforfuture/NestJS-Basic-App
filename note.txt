@@ -3,3 +3,8 @@
 	
 2)How to create pipes in nestjs
 	nest g pipe common/pipes/uppercase
+	
+3) nest g guard guards/auth	
+
+4) How to create filters in nest js?
+   nest g filter filters\http-exception

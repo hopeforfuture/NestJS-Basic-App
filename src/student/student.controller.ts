@@ -8,13 +8,16 @@ import {
   Delete,
   Param,
   Body,
+  UseGuards,
 } from '@nestjs/common';
+import { AuthGuard } from 'src/guards/auth/auth.guard';
 
 @Controller('api/v1/students')
 export class StudentController {
   constructor(private readonly stdService: StudentService) {}
 
   @Get()
+  @UseGuards(AuthGuard)
   getAll(): Student[] {
     return this.stdService.getAllStudents();
   }
